@@ -6,16 +6,10 @@ export function handleInstalled (_details: chrome.runtime.InstalledDetails): voi
   const onError = (error: unknown): void => { console.error(`Error: ${error}`) }
 
   function abrirUrlSeipp (item: StorageData): void {
+    // Marca instalação/atualização no storage.
+    // Página de boas-vindas pode ser adicionada futuramente.
     item.InstallOrUpdate = true
     currentBrowser.storage.local.set(item)
-
-    const repoUrl = 'https://github.com/fortissolucoescontato-bit/SEI'
-
-    if (item.CheckTypes === undefined) {
-      currentBrowser.tabs.create({ url: repoUrl })
-    } else if (!item.CheckTypes.includes('hidemsgupdate')) {
-      currentBrowser.tabs.create({ url: repoUrl })
-    }
   }
 
   getLocalStorage('CheckTypes').then(abrirUrlSeipp).catch(onError)
