@@ -1,10 +1,14 @@
 # SEI++
-Extensão para o Firefox e Chrome que adiciona novas funcionalidades ao Sistema Eletrônico de Informações - SEI
+Extensão para o Firefox e Chrome que adiciona novas funcionalidades ao Sistema Eletrônico de Informações - SEI.
 
-(Requer uma versão do SEI maior ou igual a 3.0.0).
+Desenvolvida com **Vite + React + TypeScript**.
 
-https://jonatasrs.github.io/sei/
+## Autor
 
-# Como contribuir com o projeto? (Informar bugs, desenvolver novas funcionalidades, etc...)
+**Lucas Vinicius Oliveira dos Santos**
+- GitHub: [fortissolucoescontato-bit](https://github.com/fortissolucoescontato-bit)
+- E-mail: fortissolucoes.contato@gmail.com
 
-Acesse: https://jonatasrs.github.io/sei/developer.html
+## Como contribuir com o projeto?
+
+Acesse o repositório: https://github.com/fortissolucoescontato-bit/SEI

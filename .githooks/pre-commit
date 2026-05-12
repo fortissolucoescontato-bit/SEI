@@ -13,7 +13,7 @@ fi
 PASS=true
 for file in $STAGED_FILES; do
   # Usa o conteúdo staged (não o do disco) para garantir que apenas o staged será checado
-  git show :$file | bunx eslint --stdin --stdin-filename "$file"
+  git show :$file | npx eslint --stdin --stdin-filename "$file"
   if [ $? -ne 0 ]; then
     PASS=false
   fi

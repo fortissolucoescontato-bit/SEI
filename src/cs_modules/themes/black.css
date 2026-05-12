@@ -1,0 +1,338 @@
+/* STYLISH: SEI-3.0_Black-Theme_1.5                                           *
+ * Autor: Lucas Vinicius Oliveira dos Santos                                  *
+ * VERSAO: 1.5                                                                */
+
+/*** VARIAVEIS ****************************************************************/
+:root {
+  --dark-gray: #363636;
+}
+
+/*** GLOBAL *******************************************************************/
+* {
+  color: white;
+  background-color: transparent;
+}
+html {
+  background-color: black;
+}
+input, button, textarea, select {
+  background-color: black !important;
+  color: inherit !important;
+}
+option {
+  background-color: var(--dark-gray);
+}
+option:hover {
+  background-color: darkblue !important;
+}
+button *, span.infraTeclaAtalho {
+  color: inherit !important;
+}
+fieldset {
+  border-color: white !important;
+}
+legend {
+  color: inherit !important;
+  background-color: var(--dark-gray) !important;
+  border-color: white !important;
+}
+a:link {color: #0066ff;}
+a:visited {color: rgb(132, 0, 255);}
+a:hover {color: lightskyblue;}
+a:active {color: red;}
+li a:hover {
+  background-color: darkblue !important;
+  color: white !important;
+}
+#tblTipoProcedimento, #tblSeries {
+  background-color: black !important;
+}
+.dd-options {
+  background-color: black !important;
+}
+.dd-option-selected, .dd-selected {
+  background: darkgreen !important;
+}
+table.resultado td.resSnippet, table.resultado td.metatag, table.resultado td.metatag * {
+  background-color: inherit !important;
+}
+.totalEstatisticas {
+  background-color: darkblue !important;
+}
+#btnVisualizarAssinaturas {color: black !important;}
+th.tituloControle {background-color: transparent;}
+#divInfraAreaGlobal, #divAutenticacao, #divSistema {
+  background-color: transparent !important;
+}
+th.tituloControleExterno {
+  background-color: unset;
+}
+
+/*** Histórico do Processo **************************************************/
+.andamentoConcluido {background-color: black;}
+.andamentoAberto {background-color: darkgoldenrod;}
+.andamentoAberto td {color: black;}
+.andamentoAberto td a {color: blue;}
+
+/*** BARRA SISTEMA **********************************************************/
+div.infraBarraSistema{
+  background-image: none;
+  border-bottom-color: var(--dark-gray);
+}
+#divInfraBarraSistemaE img:first-child, #divComandos img {
+  filter: brightness(50%);
+}
+/****************************************************************************/
+
+/*** MENU LATERAL ***********************************************************/
+#main-menu, #main-menu ul {
+  background-color: var(--dark-gray) !important;
+  border: none;
+}
+#main-menu li, div.infraAreaTelaE {
+  background-color: black !important;
+}
+#main-menu a {
+  color: inherit !important;
+  background-color: inherit;
+  border-bottom-color: var(--dark-gray);
+}
+#main-menu li a:hover, #main-menu li a.highlighted {
+  background-color: darkblue !important;
+}
+/****************************************************************************/
+
+/*** E-MAIL *****************************************************************/
+#s2id_hdnDestinatario ul.select2-choices, li.select2-search-choice {
+  background-image: none !important;
+}
+#s2id_hdnDestinatario *,#select2-drop, li.select2-search-choice,
+li.select2-search-choice *, li.select2-no-results, li.select2-searching {
+  background-color: black !important;
+}
+
+/*** TOOLTIP ****************************************************************/
+div.infraTooltipTitulo{
+  color: black !important;
+}
+div.infraTooltipTexto{
+  color: black !important;
+}
+/****************************************************************************/
+
+/*** infra-esquema-local.css */
+div.infraAreaGlobal {
+  border-color: var(--dark-gray);
+}
+a.ancoraPadraoPreta, caption.infraCaption, a.processoVisualizado {
+  color: inherit;
+}
+a.processoVisitado {
+  color: #3E8BFF; /*blue*/
+}
+label.infraLabelOpcional, label.infraLabelObrigatorio,
+label.infraLabelCheckbox, label.infraLabelRadio {
+  color: inherit;
+}
+a.ancoraSigla, a.ancoraHistoricoProcesso {
+  color: #0066ff;
+}
+a.ancoraOpcao {
+  color: inherit;
+}
+.infraSpanRealce {
+  background-color: darkgreen;
+}
+div.tituloProcessoDocumento, div.tituloProcessoDocumento label {
+  background-color: var(--dark-gray);
+  color: white;
+  border-bottom-color: black;
+}
+tr.trVermelha {
+  background-color: #550000;
+}
+
+/*** infra-global-esquema.css */
+caption.infraCaption {
+  border-bottom-color: lightgray;
+}
+table.infraTable {
+  background-color: #555 !important;
+}
+th.infraTh, th.infraTh div {
+  background-color: #555;
+  background-image: none;
+}
+tr.infraTrClara {
+  background-color: black;
+}
+tr.infraTrEscura {
+  background-color: #333;
+}
+tr.infraTrAcessada td {
+  background-color: transparent !important;
+}
+tr.infraTrAcessada a {
+  color: unset !important;
+}
+div.infraBarraComandos{
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+div.infraAreaDados{
+  border-bottom-color: transparent
+}
+div.infraAreaTelaD {
+  border-color: transparent;
+}
+.infraProcessando {
+  color: black !important;
+  background-color: transparent !important;
+  filter: invert(100%);
+}
+tr.infraTrMarcada td { /* remove a cor do td */
+  background-color: transparent !important;
+}
+tr.infraTrMarcada {
+  background-color: #003800 !important; /* Very DarkGreen */
+}
+tr.infraTrSelecionada,
+tr.infraTrSelecionada td,
+td.infraTdSelecionada{
+background-color:darkblue !important;
+}
+
+/*** infra-ajax.css *** Caixa de autocompletar ******************************/
+div.infraAjaxAutoCompletar {
+  background-color: black;
+}
+div.infraAjaxAutoCompletar a{
+  color:lightgray;
+}
+div.infraAjaxAutoCompletar li.selected {
+  background-color: darkblue;
+}
+.infraAjaxMarcarSelecao {
+  border-color: gray !important;;
+}
+
+/*** CALENDARIOS ************************************************************/
+#infraCalendario, #divCalendario .diaUtil {
+  background-color: black;
+  border: none;
+}
+.calendar_week_column, #infraCalendario .todaysDate,
+#divCalendario .diaFimDeSemana {
+  background-color: #333333 !important;
+  border: none;
+}
+#divCalendario .diaAtrasado {
+  background-color: darkred !important;
+}
+#divCalendario .diaConteudo a {
+  color: black;
+}
+
+/*** */
+div.infraBarraSuperior {
+  filter: brightness(70%);
+}
+
+/*** multiple-select.css */
+.ms-drop {
+  background-color: var(--dark-gray);
+}
+.ms-drop:hover {
+  background-color: darkblue;
+}
+
+/*** ARVORE DE PROCESSOS ****************************************************/
+#divArvore {
+  border-bottom-color: white;
+}
+#divRelacionados {
+  border-top-color: white;
+}
+a.ancoraRelacionadosParcial {
+  color: inherit;
+}
+
+img[src*="aguarde.gif"],
+img[src*="aguarde_pequeno.gif"],
+img[src*="ajuda.gif"],
+img[src*="sei_assinar_pequeno.gif"],
+img[src*="sei_autenticar_pequeno.gif"],
+img[src*="sei_autenticar_pequeno_nao_bloqueado.gif"] {
+  filter: invert(100%);
+}
+
+/*** scayt.css ****************************************************************/
+
+.scayt-misspell-word {
+  color: inherit;
+}
+
+/*** PUBLICAÇÕES ELETRONICAS ************************************************/
+tr.trEspaco {
+  background-color: black;
+}
+/*** PESQUISA PUBLICA *******************************************************/
+tr.resTituloRegistro td {
+  background-color: var(--dark-gray) !important;
+} /* inline */
+/*** SEI NOVIDADES **********************************************************/
+div.tituloNovidade {
+  border-bottom-color: transparent;
+}
+/*** VISUALIZAR DOCUMENTOS ****************************************************/
+#ifrArvoreHtml { /* Documento visualizado dentro do iframe */
+  background-color: white;
+  filter: brightness(90%);
+}
+/*** Ajuda da busca ***********************************************************/
+.texto {
+  color: inherit;
+  background: inherit;
+}
+.exemplo {
+  background: inherit;
+}
+.exemplo strong {
+  color: inherit;
+}
+
+/*** TELA INICIAL *************************************************************/
+#divAreaRestrita {
+  background-color: inherit !important;
+}
+#divSistema {
+  filter: brightness(50%);
+}
+
+/* SEI++ */
+.infraTrseippalerta {
+  background-color: #330 !important;
+}
+.infraTrseippcritico {
+  background-color: #300 !important;
+}
+.infraTrEscura:hover, .infraTrClara:hover, .infraTrseippalerta:hover, .infraTrseippcritico:hover  {background-color: darkblue !important;}
+.infraTrClara:hover * {color: white !important;}
+
+.seipp-options label:hover {
+  background-color: darkblue !important;
+}
+.toggle-options, .toggle-options:visited {
+  color: #0066ff !important;
+}
+.toggle-options > span {
+  filter: invert(100%);
+}
+a.seipp-assinatura {
+  background-color: #660 !important;
+}
+
+/*** CKEditor *****************************************************************/
+.cke_dialog_contents_body input, .cke_dialog_contents_body select {
+  background-color: white !important;
+}

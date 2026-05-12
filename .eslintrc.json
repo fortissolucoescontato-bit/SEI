@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "webextensions": true,
+    "jquery": true
+  },
+  "extends": [
+    "standard",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {},
+  "ignorePatterns": [
+    "lib/*",
+    "dist/*",
+    "node_modules/*",
+    "src/cs_modules/core.d_idle/*"
+  ],
+  "globals": {
+    "browser": "readonly",
+    "currentBrowser": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "extends": ["eslint:recommended"]
+    }
+  ]
+}

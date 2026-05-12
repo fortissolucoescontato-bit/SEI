@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "SEI++",
+  "short_name": "SEI++",
+  "description": "SEI++: Adiciona novas funcionalidades ao Sistema Eletrônico de Informações - SEI.",
+  "version": "1.0.0",
+  "author": "Lucas Vinicius Oliveira dos Santos",
+  "icons": {
+    "48": "icons/seipp-new.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://*.br/*controlador.php?acao=*"
+  ],
+  "action": {
+    "default_icon": "icons/seipp-new.png",
+    "default_title": "Controle de Processos",
+    "default_popup": "src/popup/index.html"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://*.br/*"
+      ],
+      "resources": [
+        "icons/*.png",
+        "icons/*.svg",
+        "icons/*.gif"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
